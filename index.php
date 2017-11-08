@@ -1,81 +1,3 @@
-<?php
-if (isset($_POST['sendDetails'])) {
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$contactno = $_POST['contactno'];
-	$message = $_POST['message'];
-
-	$headers = "MIME-Version: 1.0" . "\r\n";
-	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-// More headers
-	$headers .= 'From: jheel_parikh@yahoo.com' . "\r\n";
-
-	$msg = '<html><body>
-<div class="box-skills">
-<div class="col-xs-12">
-<table>
-<tr>
-<th>Name</th>
-<td>' . $name . '</td>
-</tr>
-<tr>
-<th>Email</th>
-<td>' . $email . '</td>
-</tr>
-<tr>
-<th>Contact No.</th>
-<td>' . $contactno . '</td>
-</tr>
-<tr>
-<th>Message</th>
-<td>' . $message . '</td>
-</tr>
-</table>
-</div>
-</div>
-</body></html>';
-
-	$to = "jheel_parikh@yahoo.com";
-	$subject = "HTML email";
-
-	$message = "
-<html>
-<head>
-<title>HTML email</title>
-</head>
-<body>
-<p>This email contains HTML Tags!</p>
-<table>
-<tr>
-<th>Firstname</th>
-<th>Lastname</th>
-</tr>
-<tr>
-<td>John</td>
-<td>Doe</td>
-</tr>
-</table>
-</body>
-</html>
-";
-
-// Always set content-type when sending HTML email
-	$headers = "MIME-Version: 1.0" . "\r\n";
-	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-// More headers
-	$headers .= 'From: <jheel_parikh@yahoo.com>' . "\r\n";
-	$headers .= 'Cc: jheel_parikh@yahoo.com' . "\r\n";
-
-	mail($to, $subject, $message, $headers);
-//var_dump($msg);
-//$test = mail("jheel_parikh@yahoo.com","My subject",$msg,$headers);
-//var_dump($test);
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,9 +10,6 @@ if (isset($_POST['sendDetails'])) {
     <link href="custom.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/nivo-lightbox.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.js"></script>
-    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
     <style>
 
     </style>
@@ -125,7 +44,8 @@ if (isset($_POST['sendDetails'])) {
     <h3 class="margin"></h3>
     <img src="images/me2.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250"
          height="250">
-    <p style="font-size: 15px">I'm a Consulting Company Secretary and a competent professional with more than 25 years of rich,
+    <p style="font-size: 15px">I'm a Consulting Company Secretary and a competent professional with more than 25 years
+        of rich,
         versatile & qualitative experience in Secretarial
         Functions, Statutory Compliance and Legal work.</p>
 </div>
@@ -263,10 +183,10 @@ if (isset($_POST['sendDetails'])) {
     </div>
 </div>
 </div>
-<div class="container-fluid bg-4 text-center container4" id="experience" >
+<div class="container-fluid bg-4 text-center container4" id="experience">
     <h3 class='margin'><b>EXPERIENCE</b></h3>
     <div class="row margin-row">
-        <div class="col-xs-12"  style="text-align: center">
+        <div class="col-xs-12" style="text-align: center">
             <div class="box-exp col-xs-12">
                 <div class="col-sm-4 col-xs-12 ">
                     <p><b>Elecon Engineering Co. Limited.,Vallabh Vidhyanagar </b> - Secretarial Head & Compliance
@@ -290,7 +210,7 @@ if (isset($_POST['sendDetails'])) {
 </div>
 
 
-<div class="container-fluid bg-5 text-center container4" id="contact" >
+<div class="container-fluid bg-5 text-center container4" id="contact">
     <h3 class='margin'><b>CONTACT</b></h3>
     <div class="row margin-row">
         <div class="col-sm-6 col-xs-12 ">
@@ -333,13 +253,19 @@ if (isset($_POST['sendDetails'])) {
                               required></textarea>
                     <p class="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
+
                 <button type="submit" class="btn btn-warning btn-lg" name='sendDetails'>Send Message</button>
+                <br/> <br/>
+                <div id="outer"  style="width: 100%;display: none">
+                    <div class="alert alert-success " style="display: table;
+  margin: 0 auto;">
+                        <strong>Success!</strong> Thank you !
+                    </div>
+                </div>
             </form>
         </div>
     </div>
 </div>
-
 
 
 <!-- Footer -->
@@ -358,3 +284,21 @@ if (isset($_POST['sendDetails'])) {
 </html>
 
 
+<script>
+    $('form').on('submit', function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: "sendEmail.php",
+            type: 'POST',
+            data: $('form').serialize(),
+            dataType: 'TEXT',
+            beforeSend: function () {
+
+            },
+            success: function (response) {
+                $('#outer').show();
+            }
+        });
+        return false;
+    });
+</script>
