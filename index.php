@@ -3,16 +3,15 @@
 <head>
     <!-- Theme Made By www.w3schools.com - No Copyright -->
     <title>Parthiv Parikh - CS</title>
+    <link rel="icon" href="images/icons8-customer.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="custom.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-
-    </style>
 </head>
 <body>
 
@@ -25,14 +24,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
+            <a class="navbar-brand highlight-color" href="#profile"><b>PARTHIV PARIKH</b></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#core">Core Competencies</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills" class="highlight-color">Skills</a></li>
+                <li><a href="#core" class="highlight-color">Core Competencies</a></li>
+                <li><a href="#experience" class="highlight-color">Experience</a></li>
+                <li><a href="#contact" class="highlight-color">Contact</a></li>
 
             </ul>
         </div>
@@ -40,11 +39,11 @@
 </nav>
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center container1">
+<div class="container-fluid bg-1 text-center container1" id="profile">
     <h3 class="margin"></h3>
-    <img src="images/me2.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250"
+    <img src="images/me3.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250"
          height="250">
-    <p style="font-size: 15px">I'm a Consulting Company Secretary and a competent professional with more than 25 years
+    <p style="font-size: 18px">I'm a Consulting Company Secretary and a competent professional with more than 25 years
         of rich,
         versatile & qualitative experience in Secretarial
         Functions, Statutory Compliance and Legal work.</p>
@@ -54,8 +53,8 @@
 
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-2 text-center container3" id="skills">
-    <h3 class='margin'><b>SKILLS</b></h3>
+<div class="container-fluid bg-4 text-center container3" id="skills">
+    <h3 class='margin'><i class="fa fa-gears"></i><b> SKILLS</b></h3>
     <div class="row margin-row">
         <div class="col-sm-4 col-xs-12 ">
             <div class="box hover-bg">
@@ -139,11 +138,11 @@
         </div>
     </div>
 </div>
-<div class="container-fluid bg-3 text-center container4" id="core">
-    <h3 class='margin'><b>CORE COMPETENCIES</b></h3>
+<div class="container-fluid bg-4 text-center container4" id="core">
+    <h3 class='margin'><i class="fa fa-tasks"></i> <b> CORE COMPETENCIES</b></h3>
     <div class="row margin-row">
         <div class="col-xs-12 ">
-            <div class="box-core hover-bg">
+            <div class="box-exp">
 
                 <p>Managing procedural formalities related to Incorporation of Company, Change of
                     Name from Public to Private Company / Private to Public Company, Change of
@@ -184,7 +183,7 @@
 </div>
 </div>
 <div class="container-fluid bg-4 text-center container4" id="experience">
-    <h3 class='margin'><b>EXPERIENCE</b></h3>
+    <h3 class='margin'><i class="fa fa-institution"> <b></i> EXPERIENCE</b></h3>
     <div class="row margin-row">
         <div class="col-xs-12" style="text-align: center">
             <div class="box-exp col-xs-12">
@@ -211,7 +210,7 @@
 
 
 <div class="container-fluid bg-5 text-center container4" id="contact">
-    <h3 class='margin'><b>CONTACT</b></h3>
+    <h3 class='margin'><i class="fa fa-pencil"></i><b> CONTACT</b></h3>
     <div class="row margin-row">
         <div class="col-sm-6 col-xs-12 ">
             <iframe width="100%" height="450" frameborder="0" style="border:0"
@@ -256,7 +255,7 @@
 
                 <button type="submit" class="btn btn-warning btn-lg" name='sendDetails'>Send Message</button>
                 <br/> <br/>
-                <div id="outer"  style="width: 100%;display: none">
+                <div id="outer" style="width: 100%;display: none">
                     <div class="alert alert-success " style="display: table;
   margin: 0 auto;">
                         <strong>Success!</strong> Thank you !
