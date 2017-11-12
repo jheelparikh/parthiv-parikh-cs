@@ -27,7 +27,7 @@
             <a class="navbar-brand highlight-color" href="#profile"><b>PARTHIV PARIKH</b></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" style="font-size:18px;color:black !important">
                 <li><a href="#skills" class="highlight-color">Skills</a></li>
                 <li><a href="#core" class="highlight-color">Core Competencies</a></li>
                 <li><a href="#experience" class="highlight-color">Experience</a></li>
@@ -41,9 +41,9 @@
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center container1" id="profile">
     <h3 class="margin"></h3>
-    <img src="images/me3.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250"
+    <img src="images/P2.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250"
          height="250">
-    <p style="font-size: 18px">I'm a Consulting Company Secretary and a competent professional with more than 25 years
+    <p style="font-size: 18px">I am Consulting Company Secretary and a competent professional with more than 25 years
         of rich,
         versatile & qualitative experience in Secretarial
         Functions, Statutory Compliance and Legal work.</p>
@@ -143,36 +143,35 @@
     <div class="row margin-row">
         <div class="col-xs-12 ">
             <div class="box-exp">
-
-                <p>Managing procedural formalities related to Incorporation of Company, Change of
+	<ul>
+               <li> <p>Managing procedural formalities related to Incorporation of Company, Change of
                     Name from Public to Private Company / Private to Public Company, Change of
                     Name Clause, Winding-up of the Company, Filing of various forms with ROC
-                    including XBRL filings</p>
+                    including XBRL filings</p></li>
 
-                <p>Preparing & filing of necessary documents, returns & forms with ROC as required
-                    under Companies <b> Act & Stock Exchange, Listing Agreement, Reserve Bank, NSDL,
-                        CDSL and Government Authorities.</b></p>
+                <li><p>Preparing & filing of necessary documents, returns & forms with ROC as required
+                    under Companies <b> Act & Stock Exchange, Listing Agreement, Reserve Bank, NSDL,CDSL and Government Authorities.</b></p></li>
 
-                <p>Representing the company before Statutory Authorities like <b> ROC, RD, OL, Stock
-                        Exchanges, SEBI for various corporate matters.</b></p>
+                <li><p>Representing the company before Statutory Authorities like <b> ROC, RD, OL, Stock
+                        Exchanges, SEBI for various corporate matters.</b></p></li>
 
-                <p>Managing the capital restructuring programs like <b> Rights issue, QIP issue, issues of
+                <li><p>Managing the capital restructuring programs like <b> Rights issue, QIP issue, issues of
                         bonus shares & shares on preferential shares, Issuance of NCDs and listing of such
                         securities </b> on stock exchanges and dealing with stock exchanges & authorities like
                     NSDL & CDSL for listing of securities and for payment of dividend
-                </p>
+                </p></li>
 
-                <p>Creating, maintaining and filing necessary records / documents / returns as per
+                <li><p>Creating, maintaining and filing necessary records / documents / returns as per
                     provisions of various statutory acts such as <b> Company, Securities Contract
-                        Regulation, SEBI and FEMA Acts </b></p>
+                        Regulation, SEBI and FEMA Acts </b></p></li>
 
-                <p>Structuring & vetting of various legal documents such as <b> Loan documents,
+                <li><p>Structuring & vetting of various legal documents such as <b> Loan documents,
                         Hypothecation , Mortgage deeds and other loan documents, Deeds, Affidavits,
-                        Undertakings, MOUs, Power of Attorney, Declarations etc. </b></p>
+                        Undertakings, MOUs, Power of Attorney, Declarations etc. </b></p></li>
 
-                <p>Dealing with Solicitors & Advocates for obtaining their views & opinions on various
+                <li><p>Dealing with Solicitors & Advocates for obtaining their views & opinions on various
                     matters of Companies Act & Allied Laws and holding meetings and / or discussions
-                    with them for the same.</p>
+                    with them for the same.</p></li>
 
                 </ul>
 
@@ -213,11 +212,11 @@
     <h3 class='margin'><i class="fa fa-pencil"></i><b> CONTACT</b></h3>
     <div class="row margin-row">
         <div class="col-sm-6 col-xs-12 ">
-            <iframe width="100%" height="450" frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC2wMfWZ5bOaLyhIRdb9abN5XlaUmlg5j4 &q=Space+Needle,Seattle+WA"
-                    allowfullscreen>
-            </iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.569731665096!2d72.56133343388802!3d23.03956525978187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848b3a52fc5d%3A0x9bd02932e5c5f77d!2sP+Parikh+%26+Associates!5e0!3m2!1sen!2sca!4v1510437947654" frameborder="0" style="border:0"  width="100%" height="450" allowfullscreen></iframe>
+           	 </iframe>
+	
         </div>
+
         <div class="col-sm-6 col-xs-12 ">
             <form name="sentMessage" method='POST' action='index.php'>
                 <div class="row">
@@ -262,22 +261,19 @@
                     </div>
                 </div>
             </form>
-        </div>
+<div class='col-xs-12' style='text-align:left'>
+<p style='text-decoration: underline; font-weight:bolder'> Contact Details </p>
+       	<div class='col-xs-1'><i class='fa fa-envelope'></i></div>	<div class='col-xs-5'>   <a href="mailto:pparikhcs@gmail.com" style='color:white;font-weight:bolder'>pparikhcs@gmail.com</a></div>
+<div class='col-xs-1'><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+</i></div>	<div class='col-xs-5'>   </div><br/>
+	<div class='col-xs-1'><i class='fa fa-phone'></i> </div>	<div class='col-xs-5'> <b>9909960163</b></div>
+    <div class='col-xs-1'><i class='fa fa-envelope'></i></div>	<div class='col-xs-5'>   <a href="mailto:pparikhcs@gmail.com" style='color:white;font-weight:bolder'>pparikhcs@gmail.com</a></div>
+   </div>
+	
     </div>
 </div>
 
 
-<!-- Footer -->
-<footer class="container-fluid bg-5 text-center">
-    <hr>
-    <address>
-        Email me @ <a href="mailto:parthiv.parikh25@gmail.com">parthiv.parikh25@gmail.com</a><br>
-        Contact No: 9909960163
-        <br>
-        Box 564, Disneyland<br>
-        USA
-    </address>
-</footer>
 
 </body>
 </html>

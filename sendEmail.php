@@ -1,5 +1,5 @@
 <?php
-require_once 'swiftmailer-master/lib/swift_required.php';
+require 'PHPMailer/src/PHPMailer.php';
 
 if (isset($_POST['name'])) {
 	$name = $_POST['name'];
@@ -38,50 +38,18 @@ if (isset($_POST['name'])) {
 </div>
 </div>
 </body></html>';
-/*	$to = "jheel_parikh@yahoo.com";
-	$subject = "HTML email";
-// Always set content-type when sending HTML email
-	$headers = "MIME-Version: 1.0" . "\r\n";
-	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-// More headers
-	$headers .= 'From: <jheel_parikh@yahoo.com>' . "\r\n";
-	$headers .= 'Cc: jheel_parikh@yahoo.com' . "\r\n";
-
-	mail($to, $subject, $message, $headers);
-*/
+	$mail = new PHPMailer\PHPMailer\PHPMailer;
 
 
-
-// Create the mail transport configuration
-	$transport = (new Swift_SmtpTransport('smtp.gmail.com', 25))
-		->setUsername('jheel.parikh2412@gmail.com')
-		->setPassword('jheel2412')
-	;
-// Create the Mailer using your created Transport
-	$mailer = new Swift_Mailer($transport);
-
-// Create a message
-	$message = (new Swift_Message('Wonderful Subject'))
-		->setFrom(['jheel_parikh@yahoo.com' => 'Jheel Parikh'])
-		->setTo(['jheel_parikh@yahoo.com' => 'Jheel Parikh'])
-		->setBody('Here is the message itself')
-	;
-
-// Send the message
-	$result = $mailer->send($message);
-}
-/*
-	$mail = new \PHPMailer\PHPMailer\PHPMailer();
-
-	$mail->SMTPDebug = 3;
+	$mail->SMTPDebug = 0;
 	$mail->isSMTP();                            // Set mailer to use SMTP
 	$mail->Host = 'smtp.gmail.com';             // Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                     // Enable SMTP authentication
+	$mail->SMTPKeepAlive = true; // SMTP connection will not close after each email sent, reduces SMTP overhead
 	$mail->Username = 'jheel.parikh2412@gmail.com';          // SMTP username
 	$mail->Password = 'jheel2412'; // SMTP password
-	$mail->SMTPSecure = 'tls';                  // Enable TLS encryption, `ssl` also accepted
-	$mail->Port = 587;                          // TCP port to connect to
+	$mail->Port = 25;
 
 	$mail->setFrom('jheel.parikh2412@gmail.com', 'Jheel Parikh');
 	$mail->addReplyTo('jheel.parikh2412@gmail.com', 'Jheel Parikh');
@@ -93,8 +61,8 @@ if (isset($_POST['name'])) {
 	//$bodyContent .= '<p>This is the HTML email sent from localhost using PHP script by <b>CodexWorld</b></p>';
 
 	$mail->Subject = 'New Message from : '.$name;
-	$mail->Body = $bodyContent;
-
+	//$mail->Body = $bodyContent;
+	$mail->msgHTML($bodyContent);
 
 	if (!$mail->send()) {
 		echo "ASAS"; die;
