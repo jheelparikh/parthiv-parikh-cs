@@ -270,15 +270,9 @@
                 <div class='col-xs-1'><i class='fa fa-envelope'></i></div>
                 <div class='col-xs-5'><a href="mailto:pparikhcs@gmail.com" style='color:white;font-weight:bolder'>pparikhcs@gmail.com</a>
                 </div>
-                <div class='col-xs-1'><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    </i></div>
-                <div class='col-xs-5'></div>
                 <br/>
                 <div class='col-xs-1'><i class='fa fa-phone'></i></div>
                 <div class='col-xs-5'><b>9909960163</b></div>
-                <div class='col-xs-1'><i class='fa fa-envelope'></i></div>
-                <div class='col-xs-5'><a href="mailto:pparikhcs@gmail.com" style='color:white;font-weight:bolder'>pparikhcs@gmail.com</a>
-                </div>
             </div>
 
         </div>
