@@ -12,6 +12,8 @@
     <link href="custom.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/notify.js"></script>
+    <script src="js/notify.min.js"></script>
 </head>
 <body>
 
@@ -24,7 +26,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand highlight-color" href="#profile"><b>PARTHIV PARIKH</b></a>
+            <a class="navbar-brand highlight-color" id="nametag" href="#profile"><b>PARTHIV PARIKH</b></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right" style="font-size:18px;color:black !important">
@@ -143,35 +145,36 @@
     <div class="row margin-row">
         <div class="col-xs-12 ">
             <div class="box-exp">
-	<ul>
-               <li> <p>Managing procedural formalities related to Incorporation of Company, Change of
-                    Name from Public to Private Company / Private to Public Company, Change of
-                    Name Clause, Winding-up of the Company, Filing of various forms with ROC
-                    including XBRL filings</p></li>
+                <ul>
+                    <li><p>Managing procedural formalities related to Incorporation of Company, Change of
+                            Name from Public to Private Company / Private to Public Company, Change of
+                            Name Clause, Winding-up of the Company, Filing of various forms with ROC
+                            including XBRL filings</p></li>
 
-                <li><p>Preparing & filing of necessary documents, returns & forms with ROC as required
-                    under Companies <b> Act & Stock Exchange, Listing Agreement, Reserve Bank, NSDL,CDSL and Government Authorities.</b></p></li>
+                    <li><p>Preparing & filing of necessary documents, returns & forms with ROC as required
+                            under Companies <b> Act & Stock Exchange, Listing Agreement, Reserve Bank, NSDL,CDSL and
+                                Government Authorities.</b></p></li>
 
-                <li><p>Representing the company before Statutory Authorities like <b> ROC, RD, OL, Stock
-                        Exchanges, SEBI for various corporate matters.</b></p></li>
+                    <li><p>Representing the company before Statutory Authorities like <b> ROC, RD, OL, Stock
+                                Exchanges, SEBI for various corporate matters.</b></p></li>
 
-                <li><p>Managing the capital restructuring programs like <b> Rights issue, QIP issue, issues of
-                        bonus shares & shares on preferential shares, Issuance of NCDs and listing of such
-                        securities </b> on stock exchanges and dealing with stock exchanges & authorities like
-                    NSDL & CDSL for listing of securities and for payment of dividend
-                </p></li>
+                    <li><p>Managing the capital restructuring programs like <b> Rights issue, QIP issue, issues of
+                                bonus shares & shares on preferential shares, Issuance of NCDs and listing of such
+                                securities </b> on stock exchanges and dealing with stock exchanges & authorities like
+                            NSDL & CDSL for listing of securities and for payment of dividend
+                        </p></li>
 
-                <li><p>Creating, maintaining and filing necessary records / documents / returns as per
-                    provisions of various statutory acts such as <b> Company, Securities Contract
-                        Regulation, SEBI and FEMA Acts </b></p></li>
+                    <li><p>Creating, maintaining and filing necessary records / documents / returns as per
+                            provisions of various statutory acts such as <b> Company, Securities Contract
+                                Regulation, SEBI and FEMA Acts </b></p></li>
 
-                <li><p>Structuring & vetting of various legal documents such as <b> Loan documents,
-                        Hypothecation , Mortgage deeds and other loan documents, Deeds, Affidavits,
-                        Undertakings, MOUs, Power of Attorney, Declarations etc. </b></p></li>
+                    <li><p>Structuring & vetting of various legal documents such as <b> Loan documents,
+                                Hypothecation , Mortgage deeds and other loan documents, Deeds, Affidavits,
+                                Undertakings, MOUs, Power of Attorney, Declarations etc. </b></p></li>
 
-                <li><p>Dealing with Solicitors & Advocates for obtaining their views & opinions on various
-                    matters of Companies Act & Allied Laws and holding meetings and / or discussions
-                    with them for the same.</p></li>
+                    <li><p>Dealing with Solicitors & Advocates for obtaining their views & opinions on various
+                            matters of Companies Act & Allied Laws and holding meetings and / or discussions
+                            with them for the same.</p></li>
 
                 </ul>
 
@@ -212,9 +215,10 @@
     <h3 class='margin'><i class="fa fa-pencil"></i><b> CONTACT</b></h3>
     <div class="row margin-row">
         <div class="col-sm-6 col-xs-12 ">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.569731665096!2d72.56133343388802!3d23.03956525978187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848b3a52fc5d%3A0x9bd02932e5c5f77d!2sP+Parikh+%26+Associates!5e0!3m2!1sen!2sca!4v1510437947654" frameborder="0" style="border:0"  width="100%" height="450" allowfullscreen></iframe>
-           	 </iframe>
-	
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.569731665096!2d72.56133343388802!3d23.03956525978187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848b3a52fc5d%3A0x9bd02932e5c5f77d!2sP+Parikh+%26+Associates!5e0!3m2!1sen!2sca!4v1510437947654"
+                    frameborder="0" style="border:0" width="100%" height="450" allowfullscreen></iframe>
+            </iframe>
+
         </div>
 
         <div class="col-sm-6 col-xs-12 ">
@@ -261,18 +265,24 @@
                     </div>
                 </div>
             </form>
-<div class='col-xs-12' style='text-align:left'>
-<p style='text-decoration: underline; font-weight:bolder'> Contact Details </p>
-       	<div class='col-xs-1'><i class='fa fa-envelope'></i></div>	<div class='col-xs-5'>   <a href="mailto:pparikhcs@gmail.com" style='color:white;font-weight:bolder'>pparikhcs@gmail.com</a></div>
-<div class='col-xs-1'><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-</i></div>	<div class='col-xs-5'>   </div><br/>
-	<div class='col-xs-1'><i class='fa fa-phone'></i> </div>	<div class='col-xs-5'> <b>9909960163</b></div>
-    <div class='col-xs-1'><i class='fa fa-envelope'></i></div>	<div class='col-xs-5'>   <a href="mailto:pparikhcs@gmail.com" style='color:white;font-weight:bolder'>pparikhcs@gmail.com</a></div>
-   </div>
-	
-    </div>
-</div>
+            <div class='col-xs-12' style='text-align:left'>
+                <p style='text-decoration: underline; font-weight:bolder'> Contact Details </p>
+                <div class='col-xs-1'><i class='fa fa-envelope'></i></div>
+                <div class='col-xs-5'><a href="mailto:pparikhcs@gmail.com" style='color:white;font-weight:bolder'>pparikhcs@gmail.com</a>
+                </div>
+                <div class='col-xs-1'><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </i></div>
+                <div class='col-xs-5'></div>
+                <br/>
+                <div class='col-xs-1'><i class='fa fa-phone'></i></div>
+                <div class='col-xs-5'><b>9909960163</b></div>
+                <div class='col-xs-1'><i class='fa fa-envelope'></i></div>
+                <div class='col-xs-5'><a href="mailto:pparikhcs@gmail.com" style='color:white;font-weight:bolder'>pparikhcs@gmail.com</a>
+                </div>
+            </div>
 
+        </div>
+    </div>
 
 
 </body>
@@ -291,7 +301,9 @@
 
             },
             success: function (response) {
-                $('#outer').show();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                $.notify("Thank you for contacting us !", "info");
+                $('form')[0].reset();
             }
         });
         return false;

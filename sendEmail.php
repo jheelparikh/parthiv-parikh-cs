@@ -1,5 +1,5 @@
 <?php
-require 'PHPMailer/src/PHPMailer.php';
+require 'Libraries/vendor/autoload.php';
 
 if (isset($_POST['name'])) {
 	$name = $_POST['name'];
@@ -7,113 +7,87 @@ if (isset($_POST['name'])) {
 	$contactno = $_POST['contactno'];
 	$message = $_POST['message'];
 
-
-	$headers = "MIME-Version: 1.0" . "\r\n";
-	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-// More headers
-	$headers .= 'From: jheel_parikh@yahoo.com' . "\r\n";
-
-	$msg = '<html><body>
-<div class="box-skills">
-<div class="col-xs-12">
-<table>
-<tr>
-<th>Name</th>
-<td>' . $name . '</td>
-</tr>
-<tr>
-<th>Email</th>
-<td>' . $email . '</td>
-</tr>
-<tr>
-<th>Contact No.</th>
-<td>' . $contactno . '</td>
-</tr>
-<tr>
-<th>Message</th>
-<td>' . $message . '</td>
-</tr>
-</table>
-</div>
-</div>
-</body></html>';
-
-	$mail = new PHPMailer\PHPMailer\PHPMailer;
-
-
-	$mail->SMTPDebug = 0;
-	$mail->isSMTP();                            // Set mailer to use SMTP
-	$mail->Host = 'smtp.gmail.com';             // Specify main and backup SMTP servers
-	$mail->SMTPAuth = true;                     // Enable SMTP authentication
-	$mail->SMTPKeepAlive = true; // SMTP connection will not close after each email sent, reduces SMTP overhead
-	$mail->Username = 'jheel.parikh2412@gmail.com';          // SMTP username
-	$mail->Password = 'jheel2412'; // SMTP password
-	$mail->Port = 25;
-
-	$mail->setFrom('jheel.parikh2412@gmail.com', 'Jheel Parikh');
-	$mail->addReplyTo('jheel.parikh2412@gmail.com', 'Jheel Parikh');
-	$mail->addAddress('jheel_parikh@yahoo.com', 'Jheel Parikh');   // Add a recipient
-
-	$mail->isHTML(true);  // Set email format to HTML
-
-	$bodyContent = $msg;
-	//$bodyContent .= '<p>This is the HTML email sent from localhost using PHP script by <b>CodexWorld</b></p>';
-
-	$mail->Subject = 'New Message from : '.$name;
-	//$mail->Body = $bodyContent;
-	$mail->msgHTML($bodyContent);
-
-	if (!$mail->send()) {
-		echo "ASAS"; die;
-		echo 'Message could not be sent.';
-		echo 'Mailer Error: ' . $mail->ErrorInfo; ;
-	} else {
-		echo "done"; die;
-		echo 'Message has been sent';
-	}
-	echo 'Thank you so much';
-}
-*/
-	/*
-	$to = "jheel_parikh@yahoo.com";
-	$subject = "HTML email";
-
-	$message = "
+	$msg = '
 <html>
-<head>
-<title>HTML email</title>
-</head>
+	<head>
+		<style>
+			.box-skills {
+				padding: 7px 7px 7px 7px;
+				background: #fff;
+				color: #000;
+				text-align: left;
+				cursor: pointer;
+				box-shadow: 0 0 5px #367588;
+				font-size: 14px;
+				width: 100%;
+			}
+			td,th{
+				padding: 1% !important;
+			}
+        </style>
+   </head>
 <body>
-<p>This email contains HTML Tags!</p>
-<table>
-<tr>
-<th>Firstname</th>
-<th>Lastname</th>
-</tr>
-<tr>
-<td>John</td>
-<td>Doe</td>
-</tr>
-</table>
+	<div class="box-skills">
+	 	<div id="outer" style="width: 100%;">
+	 	<div  style="display: table; margin: 0 auto;">
+					<table border="1" style="width: 60%;" cellpadding="5px">
+						<tr>
+							<th>Name</th>
+							<td>' . $name . '</td>
+						</tr>
+						<tr>
+							<th>Email</th>
+							<td>' . $email . '</td>
+						</tr>
+						<tr>
+							<th>Contact No.</th>
+							<td>' . $contactno . '</td>
+						</tr>
+						<tr>
+							<th>Message</th>
+							<td>' . $message . '</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+	</div>
 </body>
-</html>
-";
+</html>';
+	try {
+		$mail = new PHPMailer\PHPMailer\PHPMailer();
+		$mail->SMTPDebug = 4;
+		$mail->isSMTP();                            // Set mailer to use SMTP
+		$mail->Host = 'tls://smtp.gmail.com:587';             // Specify main and backup SMTP servers
+		$mail->SMTPAuth = true;                     // Enable SMTP authentication
+		$mail->SMTPKeepAlive = true; // SMTP connection will not close after each email sent, reduces SMTP overhead
+		$mail->Username = 'default.sender11@gmail.com';          // SMTP username
+		$mail->Password = 'defaultsender'; // SMTP password
+		$mail->Port = 587;
 
-// Always set content-type when sending HTML email
-	$headers = "MIME-Version: 1.0" . "\r\n";
-	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+		$mail->setFrom($email);
+		$mail->addReplyTo('pparikhcs@gmail.com', 'Parthiv Parikh');
+		$mail->addAddress('pparikhcs@gmail.com', 'Parthiv Parikh');   // Add a recipient
+		//$mail->addReplyTo('jheel.parikh2412@gmail.com');
+		//$mail->addAddress('jheel.parikh2412@gmail.com');   // Add a recipient
 
-// More headers
-	$headers .= 'From: <jheel_parikh@yahoo.com>' . "\r\n";
-	$headers .= 'Cc: jheel_parikh@yahoo.com' . "\r\n";
+		$mail->isHTML(true);  // Set email format to HTML
 
-	mail($to, $subject, $message, $headers);
-	echo 'Thank you so much';
-//var_dump($msg);
-//$test = mail("jheel_parikh@yahoo.com","My subject",$msg,$headers);
-//var_dump($test);
+		$bodyContent = $msg;
+
+		$mail->Subject = 'New Message from : ' . $name;
+		$mail->msgHTML($bodyContent);
+
+		if($mail->send()){
+			echo 'success';
+		}else {
+			echo "error";
+		}
+	} catch (\PHPMailer\PHPMailer\Exception $e) {
+		echo($e->errorMessage());
+		die;
+	} catch (ErrorException $e) {
+		echo($e->getMessage());
+		die; //Boring error messages from anything else!
+	}
 }
-	*/
-
 ?>
