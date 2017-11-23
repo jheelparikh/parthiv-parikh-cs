@@ -26,8 +26,7 @@ body {
     text-align: left;
     cursor: pointer;
     box-shadow: 0 0 5px #367588;
-    min-height: 150px;
-    position: relative;
+    min-height: 200px;
     font-size: 14px !important;
 }
 

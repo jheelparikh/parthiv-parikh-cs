@@ -59,31 +59,22 @@
     <h3 class='margin'><i class="fa fa-gears"></i><b> SKILLS</b></h3>
     <div class="row margin-row">
         <div class="col-sm-4 col-xs-12 ">
-            <div class="box hover-bg">
+            <div class="box">
                 <h4 class='box-heading'>Secretarial Functions</h4>
-                <p>Developing the minutes of Shareholder, Board, General & Committee Meetings as
-                    required under Companies Act involving issuance of notices, drafting agenda &
-                    resolutions to be passed at Board & Committee Meetings, preparing annual reports
-                    and recording minutes as per Companies Act.</p>
-
+                <p> Developing and Recording minutes of Shareholders, Board and Committee Meetings as required under the Companies Act involving issuance of notices, drafting Agenda and resolutions to be passed at the meetings, Preparation of Annual Reports involving preparation of AGM Notice, Directors Report, MDA etc</p>
             </div>
         </div>
         <div class="col-sm-4 col-xs-12 ">
             <div class="box">
                 <h4 class='box-heading'>Corporate Restructing</h4>
-                <p>Proficient in handling corporate restructuring issues like <b class="highlight-color">Amalgamation &
-                        De-Merger, QIP, Rights, Bonus Issues, Issuance of NCDs, delisting of shares, issuance &
-                        redemption of preference shares </b> and <b class="highlight-color">issuance of shares</b> on
-                    private placement basis as well as carrying out due diligence with solicitors & advocates for the
-                    same</p>
+                <p>Proficient in handling various Corporate Re-structuring programs like <b class="highlight-color">Merger, Demerger, sub-division of shares etc and various fund raising programs like Rights issue, QIP issue, Bonus Issue, Preferential issue of shares, Issuance of Shares & NCDs on Private Placement basis, issue and redemption of preference shares etc </b> and carrying out due diligence with Solicitors, Advocates, Lead Managers of the issue and Debenture Trustees for the same.
             </div>
         </div>
         <div class="col-sm-4 col-xs-12 ">
             <div class="box">
                 <h4 class='box-heading'>Corporate Governance</h4>
-                <p>Sound understanding of <b class="highlight-color"> Listing Agreement Guidelines with Stock Exchange,
-                        SEBI Guidelines & Codes like SEBI (ICDR) Guidelines,SEBI Substantial Acquisition of Shares) and
-                        Insider Trading Codes and other applicable SEBI Notifications and Regulations.</b></p>
+                <p><b class="highlight-color">Sound Knowledge, Understanding an Compliance of Listing Agreement, Listing Obligations and Disclosure Requirements Guidelines with Stock Exchanges, SEBI Guidelines and various codes like SEBI Substantial Acquisition of Shares, Insider Trading codes and other applicable SEBI Notifications and Regulations.</b>
+                   </p>
             </div>
         </div>
 
@@ -92,7 +83,7 @@
 
     <div class="row margin-row">
         <div class="col-sm-4 col-xs-12 ">
-            <div class="box" data-lightbox-gallery="gallery1">
+            <div class="box">
                 <h4 class='box-heading'>Preparations and Meetings</h4>
                 <p>Successfully organised AGM & Board Meetings of listed enterprises <b class="highlight-color">(consolidated
                         net worth over Rs. 23,000 Crores)</b></p>
@@ -119,8 +110,7 @@
         <div class="col-sm-4 col-xs-12 ">
             <div class="box">
                 <h4 class='box-heading'>Liaison & Coordination</h4>
-                <p>Out-of-the-box thinker with proven track record of interfacing with banks, financial institutions &
-                    regulatory authorities such as <b>Stock Exchanges, SEBI, ROC, RD, OL, NSDL and CDSL.</b></p>
+                <p>Out-of-the-box thinker with proven track record of <b> interfacing with Banks, Financial Institutions  & Regulatory Authorities like Stock Exchanges, SEBI, Lead Managers, ROC, RD, OL, NSDL, CDSL, Various Solicitors , Lawyers etc.</b></p>
             </div>
         </div>
         <div class="col-sm-4 col-xs-12 ">
