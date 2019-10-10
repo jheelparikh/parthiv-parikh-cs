@@ -32,19 +32,19 @@ if (isset($_POST['name'])) {
 	 	<div  style="display: table; margin: 0 auto;">
 					<table border="1" style="width: 60%;" cellpadding="5px">
 						<tr>
-							<th>Name</th>
+							<th>name</th>
 							<td>' . $name . '</td>
 						</tr>
 						<tr>
-							<th>Email</th>
+							<th>email</th>
 							<td>' . $email . '</td>
 						</tr>
 						<tr>
-							<th>Contact No.</th>
+							<th>contact No.</th>
 							<td>' . $contactno . '</td>
 						</tr>
 						<tr>
-							<th>Message</th>
+							<th>message</th>
 							<td>' . $message . '</td>
 						</tr>
 					</table>
